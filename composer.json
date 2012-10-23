@@ -6,8 +6,7 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Jonathan Ingram",
-            "email": "jingram@jojari.com"
+            "name": "Jonathan Ingram"
         }
     ],
     "require": {
