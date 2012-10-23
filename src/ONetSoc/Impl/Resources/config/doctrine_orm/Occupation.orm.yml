@@ -1,0 +1,27 @@
+ONetSoc\Impl\Entity\DoctrineORM\Occupation:
+    type: entity
+    table: onetsoc_occupation
+    id:
+        id:
+            type: integer
+            generator:
+                strategy: AUTO
+    fields:
+        code:
+            type: string
+            length: 10
+            nullable: false
+            column: onetsoc_code
+        title:
+            type: string
+            length: 150
+            nullable: false
+            column: title
+        description:
+            type: text
+            nullable: false
+            column: description
+    indexes:
+        code_idx:
+            columns:
+                - onetsoc_code

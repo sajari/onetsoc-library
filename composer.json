@@ -1,0 +1,20 @@
+{
+    "name": "jojari/onetsoc-library",
+    "description": "Library source code for the O*NET-SOC taxonomy",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jonathan Ingram",
+            "email": "jingram@jojari.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "autoload": {
+        "psr-0": {
+            "ONetSoc": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
