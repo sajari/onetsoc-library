@@ -2,7 +2,7 @@
     "name": "jojari/onetsoc-library",
     "type": "library",
     "description": "Library source code for the O*NET-SOC taxonomy",
-    "keywords": ["O*Net-SOC", "taxonomy"],
+    "keywords": ["ONet-SOC", "taxonomy"],
     "license": "MIT",
     "authors": [
         {
