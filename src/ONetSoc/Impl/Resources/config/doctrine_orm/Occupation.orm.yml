@@ -22,6 +22,6 @@ ONetSoc\Impl\Entity\DoctrineORM\Occupation:
             nullable: false
             column: description
     indexes:
-        code_idx:
+        onetsoc_occupation_code_idx:
             columns:
                 - onetsoc_code
