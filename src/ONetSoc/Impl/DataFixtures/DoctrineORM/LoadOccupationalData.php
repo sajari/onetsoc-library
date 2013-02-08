@@ -3,10 +3,11 @@
 namespace ONetSoc\Impl\DataFixtures\DoctrineORM;
 
 use Doctrine\Common\DataFixtures\FixtureInterface;
+use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 use Doctrine\ORM\EntityManager;
 
-class LoadOccupationalData implements FixtureInterface
+class LoadOccupationalData implements FixtureInterface, OrderedFixtureInterface
 {
     private $entityManager;
 
@@ -26,5 +27,13 @@ class LoadOccupationalData implements FixtureInterface
         $conn = $objectManager->getConnection();
 
         $conn->executeUpdate($sql);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getOrder()
+    {
+        return 0;
     }
 }
